@@ -1,0 +1,17 @@
+@import "./assets/Colors/Colors.scss";
+@import "./assets/Fonts/Fonts.scss";
+
+.marker {
+  transform: translate(-50%, -100%);
+}
+.marker.yellow {
+  fill: yellow;
+}
+
+
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}

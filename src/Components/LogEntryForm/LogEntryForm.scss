@@ -1,0 +1,60 @@
+@import "../../assets/Fonts/Fonts.scss";
+@import "../../assets/Colors/Colors.scss";
+
+.entryForm {
+  margin-right: 0.5rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-roboto;
+  color: white;
+
+  label {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid $blue-light;
+    outline: none;
+    text-align: center;
+    font-family: $font-roboto;
+    color: white;
+    text-align: center;
+    margin: 5px;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    transition: 0.5s ease-in-out all;
+    filter: invert(1);
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__button {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 1rem;
+    border: 3px solid transparent;
+    outline: none;
+    background-color: $pink;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 700;
+    border-radius: 999px;
+    transition: 0.3s ease-in-out all;
+    font-family: $font-roboto;
+
+    &:hover {
+      cursor: pointer;
+      border: 3px solid white;
+    }
+  }
+}
